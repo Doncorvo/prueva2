@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+</head>
+<body>
+ <video id="videoPlayer"   controls>
+    <source id="videoSource" src="./coraje-1.mp4"
+    type="video/mp4">
+ </video>
+<script>
+    // Crear un objeto URLSearchParams con los parámetros de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Obtener el valor del parámetro 'video'
+    const videoFile = urlParams.get('video');
+
+    // Cambiar la fuente del video si el parámetro existe
+    if (videoFile) {
+      document.getElementById('videoSource').src = videoFile;
+      document.getElementById('videoPlayer').load();
+    } else {
+      console.error('No se encontró el parámetro del video en la URL.');
+    }
+</script>
+</body>
+</html>

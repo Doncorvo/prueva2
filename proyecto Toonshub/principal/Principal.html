@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<title>ToonsHub</title>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">ToonsHub</h2>
+			<nav>
+				<a href="#" class="activo">Inicio</a>
+				<a href="#Recomendadas">Recomendadas</a>
+				
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="serie-principal">
+			<div class="contenedor">
+				<h3 class="titulo">Coraje el perro cobarde</h3>
+				<p class="descripcion">
+					Coraje es un perro muy tímido que debe proteger a sus amos, Muriel y don Justo, de situaciones paranormales y la presencia de alienígenas mal intencionados.
+				</p>
+				<button role="button" class="boton" onclick="playVideo('coraje-1.mp4')"><i class="fas fa-play"></i>Reproducir</button>
+				<!-- <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button> -->
+			</div>
+		</div>
+
+		<div class="series-recomendadas contenedor" id="Recomendadas">
+			<div class="contenedor-titulo-controles">
+				<h3>Series Recomendadas</h3>
+				<div class="indicadores"></div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+				<div class="contenedor-carousel">
+					<div class="carousel">
+                        <div class="pelicula">
+                            <img src="../imagen/Scooby-doo misterios SA.jpg" 
+                            alt="1" onclick="playVideo('Scobydo.mp4')">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/betty.jfif" 
+                            onclick="playVideo('Betty_Boop.mp4')">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/tunder.jpg" 
+                            onclick="playVideo('Thundercats.mp4')">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/popeye.jfif" 
+                            onclick="playVideo('Popeye.mp4')">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/los picapiedra.jfif" 
+                            onclick="playVideo('Los_Picapiedra.mp4')">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/descarga.png" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/descarga.png" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/descarga.png" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/descarga.png" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/descarga.png" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/descarga.png" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/descarga.png" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/descarga.png" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/descarga.png" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="../imagen/descarga.png" alt="">
+                        </div>
+                        
+                        
+                    </div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+	</main>
+
+    <!-- vinculacion de Font Awesome -->
+	<script src="https://kit.fontawesome.com/574bbc6980.js" crossorigin="a"></script>
+	<!-- Cinculacion con js -->
+    <script src="mainprincipal.js"></script>
+</body>
+</html>
